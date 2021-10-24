@@ -1,14 +1,14 @@
-from flask import  Flask
+from flask import  Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Você está na página inicial do site'
+    return render_template('home.html')
 
 @app.route('/pagina_contatos')
 def contatos():
-    return 'qualquer dúvida ligue para esse número (88) 999315675'
+    return render_template('contatos.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

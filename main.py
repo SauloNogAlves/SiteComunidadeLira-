@@ -8,7 +8,7 @@ lista_usuarios = ['Lira', 'João', 'Alon', 'Alessandra', 'Amanda', 'Saulo']
 def home():
     return render_template('home.html')
 
-@app.route('/pagina_contatos')
+@app.route('/contatos')
 def contatos():
     return render_template('contatos.html')
 
